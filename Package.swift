@@ -15,9 +15,6 @@ let package = Package(
         .library(name: "PulseProxy", targets: ["PulseProxy"]),
         .library(name: "PulseUI", targets: ["PulseUI"])
     ],
-    dependencies: [
-        .package(url: "https://github.com/ChartsOrg/Charts", branch: "master")
-    ],
     targets: [
         .target(name: "Pulse"),
         .target(name: "PulseProxy", dependencies: ["Pulse"]),

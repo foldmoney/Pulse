@@ -69,7 +69,7 @@ package struct LoggerStoreSizeChart: View {
 }
 
 @available(iOS 16, tvOS 16, macOS 13, watchOS 9.0, visionOS 1, *)
-private enum Category: String, Hashable, Plottable {
+private enum Category: String, Hashable, Charts.Plottable {
     case messages = "Logs"
     case responses = "Blobs"
     case free = "Free"
